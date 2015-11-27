@@ -5,7 +5,7 @@
 #include "j1Textures.h"
 #include "j1Fonts.h"
 #include "j1Input.h"
-#include "GUIElement.h"
+//#include "GUIElement.h"
 #include "j1Gui.h"
 
 
@@ -63,14 +63,16 @@ const SDL_Texture* j1Gui::GetAtlas() const
 	return atlas;
 }
 
-GUIImage* j1Gui::CreateImage()
+GUIImage* j1Gui::CreateImage(p2Point<int> pos, type_object type, SDL_Rect& img)
 {
-	GUIImage* image();
-	GUIList.add();
+		GUIImage* image = new GUIImage(pos,type,img);
+		
+		//GUIList.add();
 }
 
-GUILabel* j1Gui::CreateLabel()
+GUILabel* CreateLabel(p2Point<int>, type_object, p2SString&)
 {
+
 
 }
 

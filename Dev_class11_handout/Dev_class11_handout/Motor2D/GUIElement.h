@@ -13,8 +13,12 @@ enum type_object
 class GUIElement
 {
 public:
+	GUIElement(p2Point<int> p, type_object type) : pos(p), GUIType(type){}
+	GUIElement(){}
+
+public:
 	p2Point<int> pos;
 	type_object GUIType;
-	int id;
+	static int id;
 };
 #endif

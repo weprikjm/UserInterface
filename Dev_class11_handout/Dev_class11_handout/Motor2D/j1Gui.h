@@ -37,8 +37,8 @@ public:
 
 	// TODO 2: Create the factory methods
 	// Gui creation functions
-	GUIImage* CreateImage(p2Point<int>, type_object, SDL_Texture*);
-	GUILabel* CreateLabel();
+	GUIImage* CreateImage(p2Point<int>, type_object, SDL_Rect&);
+	GUILabel* CreateLabel(p2Point<int>, type_object, p2SString&);
 
 	const SDL_Texture* GetAtlas() const;
 
